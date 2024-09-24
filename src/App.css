@@ -1,0 +1,48 @@
+.file-explorer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.content-area {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.folder-area, .file-area {
+  width: 50%; /* Cada área ocupa la mitad del espacio disponible */
+  display: flex;
+  flex-direction: column;
+}
+
+.folder-list, .file-list {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.p-datatable .p-datatable-wrapper {
+  overflow-y: auto;
+  height: calc(100vh - 200px); /* Ajusta este valor según tus necesidades */
+}
+
+.file-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.file-actions .p-button {
+  flex: 1;
+  max-width: 150px;
+}
+
+.p-button .p-button-icon {
+  font-size: 1.2rem;
+}
